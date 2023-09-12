@@ -1,0 +1,13 @@
+<nav>
+	<div class="logo">AUTOCARE</div>
+	<div class="menu">
+	{{#if user}}
+		<a href="/home">HOME</a>
+		<a href="/profile">Profile</a>
+		<a href="/auth/logout">Logout</a>
+	{{else}}
+		<a href="/register">REGISTER</a>
+		<a href="/login">LOGIN</a>
+		{{/if}}
+	</div>
+</nav>
